@@ -1,0 +1,43 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-items: center;
+    width: 100vw;
+    height: 6rem;
+    background-color: #995D81; /* Chinese Violet */
+}
+
+#logo {
+    display: flex;
+    /* justify-content: left; */
+    width: min-content;
+}
+
+#logo-image {
+    filter: drop-shadow(0 0 0.5rem #161616);
+}
+
+#login-buttons {
+    display: flex;
+    flex-grow: 1;
+    justify-content: right;
+    align-items: center;
+    height: 60px;
+}
+
+.login-buttons {
+    display: flex;
+    background-color: #AE6777; /* China Rose */
+    border: 2px solid black;
+    margin: 0px 8px;
+    padding: 0px 10px 0px 8px;
+    cursor: pointer;
+    height: inherit;
+    align-items: center;
+    filter: drop-shadow(0 0 0.5rem #814D67);
+}
+
+.login-buttons:hover {
+    background-color: #C2706D; /* Old Rose */
+}

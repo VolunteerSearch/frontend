@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="74mm"
+   height="30mm"
+   viewBox="0 0 279.68503 113.38577"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.3816779"
+     inkscape:cx="142.68065"
+     inkscape:cy="113.10953"
+     inkscape:window-width="1920"
+     inkscape:window-height="1164"
+     inkscape:window-x="0"
+     inkscape:window-y="36"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="128.93008"
+       y="163.23257"
+       width="327.64801"
+       height="82.799133"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.2229821,-118.6558)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.88625376,0,0,2.8252642,-123.94014,-369.74131)"
+       id="text1"
+       style="font-size:53.3333px;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#000000"><tspan
+         x="128.92969"
+         y="211.75907"
+         id="tspan8"><tspan
+           style="fill:#949fd5"
+           id="tspan4">V</tspan><tspan
+           style="font-family:Z003;-inkscape-font-specification:Z003;fill:#c2c6d9"
+           id="tspan5">olunteer</tspan><tspan
+           style="fill:#949fd5"
+           id="tspan6">S</tspan><tspan
+           style="font-family:Z003;-inkscape-font-specification:Z003;fill:#c2c6d9"
+           id="tspan7">earch</tspan></tspan></text>
+  </g>
+</svg>
