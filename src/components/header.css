@@ -5,7 +5,7 @@
     align-items: center;
     width: 100vw;
     height: 6rem;
-    background-color: #995D81; /* Chinese Violet */
+    background-color: #D4BBB0; /* #995D81; /* Chinese Violet */
 }
 
 #logo {
@@ -15,7 +15,7 @@
 }
 
 #logo-image {
-    filter: drop-shadow(0 0 0.5rem #161616);
+    filter: drop-shadow(0 0 0.5rem #b9b8b8);
 }
 
 #login-buttons {
@@ -28,16 +28,16 @@
 
 .login-buttons {
     display: flex;
-    background-color: #AE6777; /* China Rose */
+    background-color: #D4C4B9; /* China Rose */
     border: 2px solid black;
     margin: 0px 8px;
     padding: 0px 10px 0px 8px;
     cursor: pointer;
     height: inherit;
     align-items: center;
-    filter: drop-shadow(0 0 0.5rem #814D67);
+    filter: drop-shadow(0 0 0.5rem #b9b8b8);
 }
 
 .login-buttons:hover {
-    background-color: #C2706D; /* Old Rose */
+    background-color: #D8D3C9; /* Old Rose */
 }
