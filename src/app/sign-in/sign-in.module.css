@@ -1,0 +1,104 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    overflow: auto;
+    box-sizing: border-box;
+    height: calc(100vh - 15px - 6rem);
+    max-height: calc(100vh - 15px - 6rem);
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/p1.jpg');
+    background-size: cover;
+    opacity: 0.6;
+    filter: blur(0.4rem);
+    z-index: -1;
+    padding: 0;
+}
+
+#formWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 24px;
+    padding: 8px;
+    margin: 10px;
+    height: 70%;
+    width: 25%;
+}
+
+#formHeaderWrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 0.3 1 0;
+}
+
+#formHeader {
+    display: flex;
+    flex: 1 1 1;
+}
+
+#formHeader h2 {
+    display: flex;
+}
+
+#signInForm {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.formField {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-grow: 1;
+    margin: 1rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    outline: none;
+}
+
+#buttonsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-grow: 1;
+    padding-top: 2.5rem;
+}
+
+#signInButton {
+    cursor: pointer;
+}
+
+#oAuthProvidersWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+}
+
+.oAuthProviderButton {
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px;
+    padding: 4px;
+    margin: 4px;
+    border: 2px solid black;
+}
