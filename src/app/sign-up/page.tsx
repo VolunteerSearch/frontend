@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import Header from "@/components/header";
-import styles from "./sign-in.module.css";
+import styles from "./sign-up.module.css";
 
 
 export default function SignInPage() {
@@ -15,12 +15,12 @@ export default function SignInPage() {
               <h2>Sign Up with your email...</h2>
             </div>
           </div>
-          <form id={styles.signInForm}>
+          <form id={styles.signUpForm}>
             <input type="email" placeholder="email@example.com" className={styles.formField} />
             <input type="password" placeholder="password" className={styles.formField} />
             <input type="password" placeholder="repeat password" className={styles.formField} />
             <div id={styles.buttonsWrapper}>
-              <input type="submit" value="Sign up" className={styles.formField} id={styles.signInButton} />
+              <input type="submit" value="Sign up" className={styles.formField} id={styles.signUpButton} />
               <h2>... or</h2>
               <div id={styles.oAuthProvidersWrapper}>
                 <button className={styles.oAuthProviderButton}>

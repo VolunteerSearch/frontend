@@ -53,7 +53,7 @@
     display: flex;
 }
 
-#signInForm {
+#signUpForm {
     display: flex;
     flex-direction: column;
     width: 75%;
@@ -82,7 +82,7 @@
     padding-top: 2.5rem;
 }
 
-#signInButton {
+#signUpButton {
     cursor: pointer;
 }
 

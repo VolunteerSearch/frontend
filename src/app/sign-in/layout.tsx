@@ -6,7 +6,7 @@ import "./sign-in.module.css"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Volunteer Search",
+  title: "Sign In - Volunteer Search",
   description: "Site for search for volunteers for any needs",
   keywords: ["volunteers"],
 };

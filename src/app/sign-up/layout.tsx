@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
-import "./sign-in.module.css"
+import "./sign-up.module.css"
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Volunteer Search",
+  title: "Sign Up - Volunteer Search",
   description: "Site for search for volunteers for any needs",
   keywords: ["volunteers"],
 };
