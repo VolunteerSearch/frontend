@@ -17,14 +17,14 @@ export default function Home() {
         <div className={styles.description}>
           <h1>Welcome to VolunteerSearch!</h1>
           <p>Are you passionate about making a difference? Looking to give back to your community?
-            You've come to the right place! At VolunteerSearch, we connect eager volunteers with meaningful opportunities.
-            Whether you have a few hours or a few months, there's a perfect fit for you here.</p>
+            You&apos;ve come to the right place! At VolunteerSearch, we connect eager volunteers with meaningful opportunities.
+            Whether you have a few hours or a few months, there&apos;s a perfect fit for you here.</p>
           
           <h1>Why Volunteer with Us?</h1>
           <ul>
-            <li><p>Diverse Opportunities: From environmental projects to helping at local shelters, there's something for everyone.</p></li>
+            <li><p>Diverse Opportunities: From environmental projects to helping at local shelters, there&apos;s something for everyone.</p></li>
             <li><p>Flexible Scheduling: Volunteer on your terms. We offer opportunities that fit your schedule.</p></li>
-            <li><p>Make an Impact: Your time and skills can make a real difference in someone's life.</p></li>
+            <li><p>Make an Impact: Your time and skills can make a real difference in someone&apos;s life.</p></li>
           </ul>
           
           <h1>How It Works</h1>
