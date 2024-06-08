@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Header from "@/components/header";
+import Header from "../../components/header";
 import styles from "./sign-in.module.css";
 
 

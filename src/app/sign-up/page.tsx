@@ -1,10 +1,15 @@
+'use client';
+
 import Image from "next/image";
 
-import Header from "@/components/header";
+import Header from "../../components/header";
 import styles from "./sign-up.module.css";
+import { createUser } from "./formSubmissionHandler";
 
 
-export default function SignInPage() {
+
+
+export default function SignUpPage() {
   return (
     <>
       <Header />
@@ -15,10 +20,11 @@ export default function SignInPage() {
               <h2>Sign Up with your email...</h2>
             </div>
           </div>
-          <form id={styles.signUpForm}>
-            <input type="email" placeholder="email@example.com" className={styles.formField} />
-            <input type="password" placeholder="password" className={styles.formField} />
-            <input type="password" placeholder="repeat password" className={styles.formField} />
+          <form id={styles.signUpForm} action={createUser} method="POST">
+            <input type="email" placeholder="email@example.com" className={styles.formField} name="email" />
+            <input type="text" placeholder="username" className={styles.formField} name="username" />
+            <input type="password" placeholder="password" className={styles.formField} name="password" />
+            <input type="password" placeholder="repeat password" className={styles.formField} name="repeat_password" />
             <div id={styles.buttonsWrapper}>
               <input type="submit" value="Sign up" className={styles.formField} id={styles.signUpButton} />
               <h2>... or</h2>
