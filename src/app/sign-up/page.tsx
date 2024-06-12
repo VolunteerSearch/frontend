@@ -1,27 +1,27 @@
 'use client';
 
-import Image from "next/image";
-import { useRouter } from 'next/navigation'
+import Image from 'next/image';
+import { useRouter, } from 'next/navigation';
 
-import Header from "../../components/header";
-import styles from "./sign-up.module.css";
-import { createUser } from "./formSubmissionHandler";
-import { FormEvent } from "react";
+import Header from '../../components/header';
+import styles from './sign-up.module.css';
+import { createUser, } from './formSubmissionHandler';
+import { FormEvent, } from 'react';
 
 
 export default function SignUpPage() {
   const router = useRouter();
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>,) => {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const success = await createUser(formData);
+    const formData = new FormData(event.currentTarget,);
+    const success = await createUser(formData,);
 
     if (success) {
-      router.push('/profile/create');
+      router.push('/profile/create',);
     } else {
       // router.push("#");
-      alert("Error");
+      alert('Error',);
     }
   };
 

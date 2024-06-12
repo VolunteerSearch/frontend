@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import React from "react";
-import Image from "next/image";
-import "./header.css";
+import React from 'react';
+import Image from 'next/image';
+import './header.module.css';
 
 function Logo() {
   return (
