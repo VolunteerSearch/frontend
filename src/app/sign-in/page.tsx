@@ -1,7 +1,10 @@
+'use client';
+
 import Image from "next/image";
 
 import Header from "../../components/header";
 import styles from "./sign-in.module.css";
+import { signIn } from "./formSubmissionHandler";
 
 
 export default function SignInPage() {
@@ -15,7 +18,7 @@ export default function SignInPage() {
               <h2>Sign In with your email...</h2>
             </div>
           </div>
-          <form id={styles.signInForm}>
+          <form id={styles.signInForm} action={signIn}>
             <input type="email" placeholder="email@example.com" className={styles.formField} />
             <input type="password" placeholder="password" className={styles.formField} />
             <div id={styles.buttonsWrapper}>

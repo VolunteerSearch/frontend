@@ -1,15 +1,30 @@
 'use client';
 
 import Image from "next/image";
+import { useRouter } from 'next/navigation'
 
 import Header from "../../components/header";
 import styles from "./sign-up.module.css";
 import { createUser } from "./formSubmissionHandler";
-
-
+import { FormEvent } from "react";
 
 
 export default function SignUpPage() {
+  const router = useRouter();
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const success = await createUser(formData);
+
+    if (success) {
+      router.push('/profile/create');
+    } else {
+      // router.push("#");
+      alert("Error");
+    }
+  };
+
   return (
     <>
       <Header />
@@ -20,7 +35,7 @@ export default function SignUpPage() {
               <h2>Sign Up with your email...</h2>
             </div>
           </div>
-          <form id={styles.signUpForm} action={createUser} method="POST">
+          <form id={styles.signUpForm} onSubmit={handleSubmit}>
             <input type="email" placeholder="email@example.com" className={styles.formField} name="email" />
             <input type="text" placeholder="username" className={styles.formField} name="username" />
             <input type="password" placeholder="password" className={styles.formField} name="password" />
