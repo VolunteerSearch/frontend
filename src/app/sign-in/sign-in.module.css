@@ -6,23 +6,8 @@
     min-width: 100vw;
     overflow: auto;
     box-sizing: border-box;
-    height: calc(100vh - 15px - 6rem);
-    max-height: calc(100vh - 15px - 6rem);
-}
-
-.main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/p1.jpg');
-    background-size: cover;
-    opacity: 0.6;
-    filter: blur(0.4rem);
-    z-index: -1;
-    padding: 0;
+    height: var(--content-height);    
+    max-height: var(--content-height);
 }
 
 #formWrapper {

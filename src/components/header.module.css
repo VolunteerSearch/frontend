@@ -5,12 +5,11 @@
     align-items: center;
     width: 100vw;
     height: 6rem;
-    background-color: #D4BBB0; /* #995D81; /* Chinese Violet */
+    background-color: #c1aaa0d5;
 }
 
 #logo {
     display: flex;
-    /* justify-content: left; */
     width: min-content;
 }
 
@@ -28,7 +27,7 @@
 
 .login-buttons {
     display: flex;
-    background-color: #D4C4B9; /* China Rose */
+    background-color: #D4C4B9;
     border: 2px solid black;
     margin: 0px 8px;
     padding: 0px 10px 0px 8px;
@@ -39,5 +38,5 @@
 }
 
 .login-buttons:hover {
-    background-color: #D8D3C9; /* Old Rose */
+    background-color: #D8D3C9;
 }

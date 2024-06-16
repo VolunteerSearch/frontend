@@ -1,12 +1,12 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint'
-import globals from "globals";
-import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
+import globals from 'globals';
+import pluginReactConfig from 'eslint-plugin-react/configs/recommended.js';
 
-import path from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
-import pluginJs from "@eslint/js";
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { FlatCompat } from '@eslint/eslintrc';
+import pluginJs from '@eslint/js';
 
 // mimic CommonJS variables -- not needed if using CommonJS
 const __filename = fileURLToPath(import.meta.url);
@@ -25,6 +25,8 @@ export default tseslint.config(
       "@typescript-eslint/semi": "error",
       "comma-dangle": "off",
       "@typescript-eslint/comma-dangle": ["error", "always"],
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": "error",
     }
   },
   eslint.configs.recommended,

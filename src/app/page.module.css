@@ -7,20 +7,7 @@
   box-sizing: border-box;
   height: calc(100vh - 15px - 6rem);
   max-height: calc(100vh - 15px - 6rem);
-}
-
-.main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/p1.jpg');
-  background-size: cover;
-  opacity: 0.6;
-  z-index: -1;
-  padding: 0;
+  backdrop-filter:blur(0.15rem);
 }
 
 #textOverlay {
@@ -29,19 +16,8 @@
   justify-content: center;
   justify-items: center;
   color: black;
-  /* color: #8E1737; */
-  /* color: rgba(255, 255, 255, 0.753); /* Pale Goldenrod
-  text-shadow:
-        -1px -1px 0 black,  
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black; */
   height: 100%;
   font-size: 4rem;
-}
-
-#textOverlay h1 {
-  filter: drop-shadow(10px 0 1.5rem black);
 }
 
 .description {
@@ -55,11 +31,15 @@
   width: 100%;
   height: calc(100vh - 15px - 6rem);
   max-height: calc(100vh - 15px - 6rem);
-  overflow: auto;
   z-index: 2;
   font-family: var(--font-mono);
   margin: 20px;
   padding-bottom: 0;
+}
+
+.description h1 {
+  filter: drop-shadow(10px 0 1.5rem black);
+  /* color: #ffffffb4; */
 }
 
 .description a {
@@ -155,9 +135,6 @@
   transform: translateZ(0);
 }
 
-/* .logo {
-  position: relative;
-} */
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

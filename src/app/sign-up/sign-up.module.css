@@ -6,23 +6,9 @@
     min-width: 100vw;
     overflow: auto;
     box-sizing: border-box;
-    height: calc(100vh - 15px - 6rem);
-    max-height: calc(100vh - 15px - 6rem);
-}
-
-.main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/p1.jpg');
-    background-size: cover;
-    opacity: 0.6;
-    filter: blur(0.4rem);
-    z-index: -1;
-    padding: 0;
+    height: var(--content-height);
+    max-height: var(--content-height);
+    backdrop-filter:blur(0.3rem);
 }
 
 #formWrapper {
@@ -72,6 +58,10 @@
     outline: none;
 }
 
+.formFieldInvalid {
+    border: 2px solid rgb(197, 81, 81);
+}
+
 #buttonsWrapper {
     display: flex;
     flex-direction: column;
@@ -84,6 +74,10 @@
 
 #signUpButton {
     cursor: pointer;
+}
+
+#signUpButton:disabled {
+    cursor: not-allowed;
 }
 
 #oAuthProvidersWrapper {
@@ -101,4 +95,21 @@
     padding: 4px;
     margin: 4px;
     border: 2px solid black;
+}
+
+#errorMessage {
+    background-color: rgba(197, 81, 81, 0.664);
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: var(--border-radius);
+    align-items: center;
+    vertical-align: middle;
+    align-content: center;
+}
+
+#errorMessage > p {
+    margin-left: 4px;
+    padding-right: 4px;
 }

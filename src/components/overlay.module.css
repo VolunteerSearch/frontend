@@ -1,0 +1,10 @@
+#overlay {
+    width: 100vw;
+    height: var(--content-height);
+    min-width: 100vw;
+    min-height: var(--content-height);
+    position: absolute;
+    background-color: rgb(209, 206, 206);
+    opacity: 0.5;
+    z-index: -1;
+}
